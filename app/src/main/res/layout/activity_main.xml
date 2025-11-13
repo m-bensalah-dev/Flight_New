@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header_background"
+            android:scaleType="fitXY"/>
+        <RelativeLayout
+            android:id="@+id/section1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_back"
+                android:backgroundTint="#674DEE"/>
+            <ImageButton
+                android:id="@+id/edit_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_edit"
+                android:backgroundTint="#674DEE" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/back_button"
+                android:layout_centerHorizontal="true"
+                android:text="08 Novembre 2025"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:id="@+id/flightRoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEL"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi International Airport"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/ball"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:src="@drawable/ic_ball"/>
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="100dp"
+                            android:src="@drawable/ic_arrow" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_below="@id/ball">
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_plane" />
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                            <View
+                                android:layout_width="6dp"
+                                android:layout_height="2dp"
+                                android:background="#FAC485"
+                                android:layout_marginEnd="2dp"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BLR"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bengaluru Airport India"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/duree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flightRoute"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="04h 30m"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/passenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/duree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_person"
+                    android:contentDescription="Person icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01 Adult"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CACACA"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/passenger" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/section2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/section1"
+            android:layout_marginTop="12dp"
+            android:padding="6dp">
+            <HorizontalScrollView
+                android:id="@+id/filterScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/btnFilter"
+                android:scrollbars="none"
+                android:layout_marginEnd="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#CACACA"
+                        app:strokeWidth="1dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Low to High"
+                            android:textColor="#6C19D8"
+                            android:textSize="14sp"
+                            android:paddingHorizontal="16dp"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#CACACA"
+                        app:strokeWidth="1dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="High to Low"
+                            android:textColor="#6C19D8"
+                            android:textSize="14sp"
+                            android:paddingHorizontal="16dp"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#CACACA"
+                        app:strokeWidth="1dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Airlines Type"
+                            android:textColor="#6C19D8"
+                            android:textSize="14sp"
+                            android:paddingHorizontal="16dp"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:id="@+id/btnFilter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#674DEE"
+                app:cornerRadius="8dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#674DEE"
+                android:src="@drawable/ic_filter"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CACACA"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/section2" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomView"/>
+</RelativeLayout>
